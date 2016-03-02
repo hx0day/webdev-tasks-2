@@ -176,7 +176,9 @@ describe('Check', function () {
             var collect = multivarka
                 .server(url)
                 .collection('students');
-            collect.where('group').equal('КН-302').set('group', 'ФТ-201').update(function (err, result) {
+            collect
+                .where('group')
+                .equal('КН-302').set('group', 'ФТ-201').update(function (err, result) {
                 if (!err) {
 
                     assert.ok(result.result.ok);
