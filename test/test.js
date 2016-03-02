@@ -184,6 +184,7 @@ describe('Check', function () {
                     assert.ok(result.result.ok);
                     assert.ok(result.result.ok);
                     assert.equal(result.result.n, 1);
+                    done();
                 }
             });
         });
