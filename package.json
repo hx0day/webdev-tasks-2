@@ -1,9 +1,13 @@
 {
   "private": true,
   "dependencies": {
-    "jscs": "2.2.1"
+    "assert": "^1.3.0",
+    "jscs": "2.2.1",
+    "mocha": "^2.4.5",
+    "mongodb": "^2.1.7"
   },
   "scripts": {
-    "lint": "jscs ."
+    "lint": "jscs .",
+    "test": "mocha test/* && npm run lint"
   }
 }
